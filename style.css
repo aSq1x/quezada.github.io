@@ -1,0 +1,199 @@
+@font-face {
+font-family: "Ubuntu+Condensed";
+src: url("fonts/Ubuntu+Condensed/Ubuntu+Condensed.eot");
+src: url("fonts/Ubuntu+Condensed/Ubuntu+Condensed.eot?#iefix")format("embedded-opentype"),
+url("fonts/Ubuntu+Condensedr/Ubuntu+Condensed.woff") format("woff"),
+url("fonts/Ubuntu+Condensed/Ubuntu+Condensed.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face {
+font-family: "OpenSans";
+src: url("fonts/OpenSans/OpenSans.eot");
+src: url("fonts/OpenSans/OpenSans.eot?#iefix")format("embedded-opentype"),
+url("fonts/OpenSans/OpenSans.woff") format("woff"),
+url("fonts/OpenSans/OpenSans.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: gray;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: "Ubuntu+Condensed";
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .1s;
+}
+.menu-main a, .menu-main a:visited {color: #FFFFFF;}
+.menu-main a.current, .menu-main a:hover{color: #FFDAB9;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #FFDAB9;
+  transition: .1s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.head {
+ font-family: "Ubuntu+Condensed";
+    padding: 0px;
+    bottom: 15px;
+    height: 30px;
+    font-size: 30px;
+    color:black;
+    letter-spacing: 1px;
+}
+
+
+
+.text {
+    font-family: "OpenSans";
+    font-size:18px;
+    padding: 0px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.first-paragraph
+{
+    text-indent: 1em;
+}
+
+.table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  weight="60%"
+}
+
+th {
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+
+
+
+
+
+.menum {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menum li {display: inline-block;}
+.menum li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menum li:last-child:after {content: none;}
+.menum a {
+  text-decoration: none;
+  font-family: "Ubuntu+Condensed";
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .1s;
+}
+.menum a, .menum a:visited {color: #9d999d;}
+.menum a.current, .menum a:hover{color: #000000;}
+.menum a:before,
+.menum a:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  top: auto;
+  background: #000000;
+}
+.menum a:hover:before, .menum .current:before {left: 0;}
+.menum a:hover:after, .menum .current:after {right: 0;}
+@media (max-width: 550px) {
+.menum {padding-top: 0;}
+.menum li {display: block;}
+.menum li:after {content: none;}
+.menum a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+}
+
+.ssilka {
+    text-decoration: none;
+  color: #DC143C;
+}
+
+.map{
+text-decoration: none;
+    color: black;
+}
+
+.map:hover {
+  text-decoration: underline;
+}
+
+.map1{
+    color: black;
+}
